@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코딩네컷_창원편</title>
+		<style>
+      /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+          /* body태그 자체에 css 요소 부여 */
+        body {
+          font-family: "LeeSeoyun";
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          background-image: url("./background.png");
+        }
+
+        .container {
+          width: 390px;
+          background-color: rgb(84, 84, 218);
+          height: 100%
+        }
+
+        .photos {
+          margin-top: 30px;
+        }
+
+        .photo-frame {
+          background-color: white;
+          margin: 10px 15px;
+          height: 250px;
+
+          background-size: cover;
+          position: relative;
+        }
+
+        .footer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .f-title {
+          color: white;
+          font-size: 25px;
+          font-weight: 900;
+        }
+
+        .f-date {
+          color: white;
+          font-size: 15px;
+          font-weight: 500;
+        }
+
+        #image1 {
+          background-image: url('./KakaoTalk_20230207_172319507_02.jpg');
+        }
+
+        #image2 {
+          background-image: url('./KakaoTalk_20230207_172319507_11.jpg');
+        }
+
+        #image3 {
+          background-image: url('./KakaoTalk_20230207_174744599.jpg');
+        }
+
+        #image4 {
+          background-image: url('./KakaoTalk_Snapshot_20220927_145448.png');
+        }
+
+        .photo_description {
+          color: white;
+          background-color: black;
+
+          width: fit-content;
+          padding: 0 20px;
+          margin-bottom: 10px;
+
+          border-radius: 10px;
+          position: absolute;
+          bottom: 0;
+
+          transform: translate(-50%);
+          left: 50%;
+        }
+
+        .video {
+          width: 100%;
+          height: 100%;  
+        }
+		</style>
+  </head>
+  <body>
+		<div class="container">
+			<div class="photos">
+	      <div id="image1" class="photo-frame">
+          <span id="desc1" class="photo_description">
+            바다에는 이미 봄이 와 있다.
+          </span>
+        </div>
+	      <div id="image2" class="photo-frame">
+          <span id="desc2" class="photo_description">
+            어째, 뒤에 어정쩡하게 <br>서 있는 사내
+          </span>
+        </div>
+	      <div id="image3" class="photo-frame">
+          <span id="desc3" class="photo_description">
+            중절모가 낯익네...
+          </span>
+        </div>
+	      <div class="photo-frame">
+          <iframe
+            src="https://www.youtube.com/embed/Qqkr7oI-6Dc"
+            frameborder="0"
+            class="video">
+          </iframe>
+        </div>
+			</div>
+      <div class="footer">
+        <p class="f-title">봄과 바다</p>
+        <p class="f-date">2023. 2. 9</p>
+      </div>
+    </div>
+  </body>
+</html>
